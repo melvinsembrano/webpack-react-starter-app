@@ -10,12 +10,17 @@
   "keywords": [],
   "author": "Melvin Sembrano <melvinsembrano@gmail.com> (https://github.com/melvinsembrano)",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1"
-  },
-  "dependencies": {
-    "react": "^15.6.1"
   }
 }
