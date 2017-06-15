@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: "[name].[contenthash].css",
+    filename: "thinktank.[contenthash].css",
     disable: false
 });
 const uglifyJs = new webpack.optimize.UglifyJsPlugin();
@@ -11,7 +11,8 @@ const uglifyJs = new webpack.optimize.UglifyJsPlugin();
 module.exports = {
   entry: './src/App.js',
   output: {
-    filename: '[name]-[chunkhash].js'
+    filename: 'thinktank-[chunkhash].js',
+    path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     extractSass,
@@ -19,13 +20,6 @@ module.exports = {
   ],
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
