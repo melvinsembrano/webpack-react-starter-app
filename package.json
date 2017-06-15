@@ -1,0 +1,21 @@
+{
+  "name": "thinktank-identity",
+  "version": "1.0.0",
+  "description": "Thinktank Identity Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Melvin Sembrano <melvinsembrano@gmail.com> (https://github.com/melvinsembrano)",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "react": "^15.6.1"
+  }
+}
