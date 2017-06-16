@@ -1,8 +1,8 @@
 {
-  "name": "thinktank-identity",
+  "name": "webpack-react-starter-app",
   "version": "1.0.0",
-  "description": "Thinktank Identity Validator",
-  "main": "index.js",
+  "description": "Minimalist starter app for React on webpack",
+  "url": "https://github.com/melvinsembrano/webpack-react-starter-app",
   "scripts": {
     "test": "jest",
     "build": "webpack",
