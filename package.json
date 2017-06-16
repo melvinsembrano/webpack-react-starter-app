@@ -39,10 +39,6 @@
   },
   "jest": {
     "testRegex": "src/.*\\.(spec|test).js",
-    "verbose": true,
-    "moduleDirectories": [
-      "node_modules",
-      "src"
-    ]
+    "verbose": true
   }
 }
