@@ -9,5 +9,8 @@ Run app in development mode.
 ### `yarn build`
 Build app in development mode.
 
+### `yarn test`
+Run test
+
 ### `yarn release`
 Build app for release
