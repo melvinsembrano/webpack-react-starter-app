@@ -1,14 +1,16 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/App.js',
   output: {
-    filename: 'thinktank.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dev')
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin() // Enable HMR
+    new webpack.HotModuleReplacementPlugin(), // Enable HMR
+    new HtmlWebpackPlugin()
   ],
   devtool: "inline-source-map",
   devServer: {
