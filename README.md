@@ -1,6 +1,13 @@
 # webpack-react-starter-app
 Minimalist starter app for React on webpack 
 
+## Pre-requisites
+NodeJS (https://nodejs.org/en/download/package-manager/)
+
+(optional)
+Yarn (https://yarnpkg.com/lang/en/docs/install/) 
+
+
 ## Installation
 `yarn` or `npm install`
 
