@@ -10,7 +10,7 @@ const extractSass = new ExtractTextPlugin({
 const uglifyJs = new webpack.optimize.UglifyJsPlugin();
 
 module.exports = {
-  entry: './src/App.js',
+  entry: ["babel-polyfill", './src/App.js'],
   output: {
     filename: '[name]-[chunkhash].js',
     path: path.resolve(__dirname, 'dist')

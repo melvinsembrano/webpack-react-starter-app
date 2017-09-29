@@ -1,6 +1,9 @@
 import React from 'react'
-import {shallow} from 'enzyme'
+import Enzyme, { shallow } from 'enzyme'
 import Hello from './hello'
+import Adapter from 'enzyme-adapter-react-16'
+
+Enzyme.configure({ adapter: new Adapter() })
 
 test('I am h1', () => {
   const hello = shallow(
