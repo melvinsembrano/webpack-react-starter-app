@@ -19,7 +19,19 @@ module.exports = {
     publicPath: '/'
   },
   module: {
-    rules: [
+    rules: [{
+        test: /\.(scss|sass|css)$/i,
+        use: [{
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
+          {
+            loader: "sass-loader" // compiles Sass to CSS
+          }
+        ]
+      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
@@ -30,20 +42,6 @@ module.exports = {
         test: /\.(js|jsx)?(\.erb)?$/,
         exclude: /node_modules/,
         use: ['babel-loader']
-      },
-      {
-        test: /\.(scss|sass|css)$/i,
-        use: [
-          {
-            loader: "style-loader" // creates style nodes from JS strings
-          },
-          {
-            loader: "css-loader" // translates CSS into CommonJS
-          },
-          {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
-          ]
       }
     ]
   }
