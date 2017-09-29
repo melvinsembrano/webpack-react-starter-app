@@ -1,9 +1,10 @@
+// @flow
 import React from 'react'
-import Enzyme, { shallow } from 'enzyme'
+import { shallow } from 'enzyme'
+import './test-setup'
 import Hello from './hello'
-import Adapter from 'enzyme-adapter-react-16'
 
-Enzyme.configure({ adapter: new Adapter() })
+const { test, expect } = global
 
 test('I am h1', () => {
   const hello = shallow(
