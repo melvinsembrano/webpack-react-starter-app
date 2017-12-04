@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/melvinsembrano/webpack-react-starter-app.svg?branch=master)](https://travis-ci.org/melvinsembrano/webpack-react-starter-app)
+
 # webpack-react-starter-app
 Minimalist starter app for React on webpack 
 
