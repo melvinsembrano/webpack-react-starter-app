@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  -  6.9.1
+  - v6.9.1
   - v8.8.0
 
 install:
@@ -8,4 +8,3 @@ install:
 
 script:
   - yarn test
-  
