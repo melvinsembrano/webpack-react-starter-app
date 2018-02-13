@@ -3,14 +3,19 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: ["babel-polyfill", './src/App.js'],
+  entry: {
+    index: ["core-js", './src/App.js'],
+  },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dev')
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(), // Enable HMR
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      chunks: ['index'],
+      filename: 'index.html'
+    })
   ],
   devtool: "inline-source-map",
   devServer: {
