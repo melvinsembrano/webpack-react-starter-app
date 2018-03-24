@@ -15,7 +15,7 @@ Yarn (https://yarnpkg.com/lang/en/docs/install/)
 
 ## Commands
 
-`yarn start` or `npm start`
+`yarn dev` or `npm run dev`
 Run app in development mode.
 
 `yarn build` or `npm build`
