@@ -1,1 +1,29 @@
-module.exports = process.env.NODE_ENV === 'production' ? require('./webpack.config.production.js') : require('./webpack.config.development.js');
+const path = require('path');
+
+module.exports = {
+  entry: {
+    index: ["core-js", './src/App.js'],
+  },
+  output: {
+    filename: '[name].js',
+    path: path.resolve(__dirname, 'dev')
+  },
+  plugins: [
+  ],
+  module: {
+    rules: [
+
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      },
+      {
+        test: /\.(js|jsx)?(\.erb)?$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
+      }
+    ]
+  }
+};
